@@ -73,17 +73,17 @@ end
   end
 
   def volume_of_cube(side)
-    volume = side.length ** 3
+    volume = side ** 3
     return volume
 
   end
 
   def volume_of_sphere(r)
     volume = (4/3) * Math::PI * (r ** 3)
-    return volume
+    return volume.to_i
   end
 
   def fahrenheit_to_celsius(fahr)
-    cel = (fahr - 32)*(5/9)
+    cel = (fahr - 32) * 5/9
     return cel
   end
